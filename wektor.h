@@ -15,10 +15,11 @@ public:
 Wektor();
 Wektor(const std::string& name, double x = 0, double y = 0);
 ~Wektor();
-void showWektor() const:
-double lenght();
-const Wektor& iloczynWektorowy(const Wektor& p) const);
-const Wektor& iloczynSkalarny(const Wektor& p) const);
-
+void showWektor() const;
+double lenght()const;
+double iloczynSkalarny(const Wektor& p);
+const Wektor suma(const Wektor& p) const;
+const Wektor roznica(const Wektor& p) const;
+double kat(const Wektor& p);
 };
 #endif //UNTITLED23_WEKTOR_H
